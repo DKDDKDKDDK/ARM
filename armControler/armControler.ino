@@ -1,9 +1,15 @@
 void setup() {
-  // put your setup code here, to run once:
-
+  pinMode(A0, INPUT);
+  pinMode(A1, INPUT);
+  pinMode(A2, INPUT);
+  pinMode(A3, INPUT);
+  pinMode(A4, INPUT);
+  pinMode(A5, INPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  int x = analogRead(A4);
+  Serial.println(x);
+  delay(200);
 }
